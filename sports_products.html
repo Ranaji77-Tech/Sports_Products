@@ -9,12 +9,6 @@
   <style>
     body {
       background-image: url("./sport-equipment-on-a-black-background-sports-equipment-on-a-black-background-sports-equipment-on-a-dark-background-ai-generated-free-photo.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-      background-position: center;
-      margin: 0;
-      padding: 0;
       font-family: Arial, sans-serif;
     }
 
@@ -33,7 +27,6 @@
       height: 120px;
       border-radius: 100%;
       border: 3px solid white;
-      object-fit: cover;
     }
 
     header h1 {
@@ -66,15 +59,13 @@
       color: black;
     }
 
-    .product-row {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 50px;
-      margin-bottom: 40px;
-      text-align: center;
+    .products-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+      text-align: center; 
+      padding-bottom: 50px;
     }
-
 
     .product {
       color: white;
@@ -86,7 +77,6 @@
       height: 155px;
       border: 2px solid white;
       border-radius: 10px;
-      object-fit: cover;
     }
 
     #b {
@@ -97,12 +87,10 @@
 
 <body>
 
-
   <header>
     <h1>Executive Sports</h1>
     <img src="logo.png" alt="Logo">
   </header>
-
 
   <nav>
     <a href="./index.html">Home</a>
@@ -110,8 +98,8 @@
     <a href="./sports_form.html">Contact Us</a>
   </nav>
 
- 
-  <div class="product-row">
+  <div class="products-container">
+
     <div class="product">
       <img src="bat1.jpg">
       <br><span id="b">executive sports Cricket bat</span><br>
@@ -135,9 +123,7 @@
       <br><span id="b">executive sports boxing gloves</span><br>
       price: ₹299
     </div>
-  </div>
 
-  <div class="product-row">
     <div class="product">
       <img src="kit.jpg">
       <br><span id="b">executive sports cricket kit</span><br>
@@ -161,9 +147,7 @@
       <br><span id="b">executive sports cricket helmet</span><br>
       price: ₹1299
     </div>
-  </div>
 
-  <div class="product-row">
     <div class="product">
       <img src="hocky.jpg">
       <br><span id="b">executive sports hockey & ball</span><br>
@@ -187,8 +171,8 @@
       <br><span id="b">executive sports racket</span><br>
       price: ₹699
     </div>
-  </div>
 
+  </div>
 </body>
 
 </html>
